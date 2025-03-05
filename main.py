@@ -11,7 +11,7 @@ WINDOW_HEIGHT = 600
 FPS = 60
 
 # Colors
-BLUE = (0, 105, 148)
+BLACK = (0, 0, 0)
 
 # Set up the game window
 screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
@@ -35,8 +35,8 @@ while running:
     keys = pygame.key.get_pressed()
     player.move(keys)
     
-    # Fill the screen with ocean blue color
-    screen.fill(BLUE)
+    # Fill the screen with black color for space
+    screen.fill(BLACK)
     
     # Draw the ship
     player.draw(screen)
